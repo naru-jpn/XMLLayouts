@@ -207,13 +207,13 @@
 - (void)refreshAllLayout
 {
     for (XMLLayoutContainer *layoutContainer in self.layoutContainers) {
-        [layoutContainer refreshWithAsyncronous:YES];
+        [layoutContainer refreshWithAsynchronous:NO];
     }
 }
 
 - (void)refreshAllLayoutWithAsynchronous:(BOOL)asynchronous {
     for (XMLLayoutContainer *layoutContainer in self.layoutContainers) {
-        [layoutContainer refreshWithAsyncronous:asynchronous];
+        [layoutContainer refreshWithAsynchronous:asynchronous];
     }
 }
 

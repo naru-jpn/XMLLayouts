@@ -26,7 +26,7 @@
 - (XMLLayout *)layoutWithID:(NSInteger)id;
 - (BOOL)findLayoutByID:(NSInteger)id work:(void (^)(XMLLayout *lauout))work;
 
-/** Measure and arrange all layout syncronously. */
+/** Measure and arrange all layout synchronously. */
 - (void)refreshAllLayout;
 
 /** Measure and arrange all layout.

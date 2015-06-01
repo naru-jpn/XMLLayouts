@@ -21,9 +21,9 @@
 - (void)refresh;
 
 /** Measure and layout each contents.
- @param asyncronous asyncronous;
+ @param asynchronous asynchronous;
  */
-- (void)refreshWithAsyncronous:(BOOL)asyncronous;
+- (void)refreshWithAsynchronous:(BOOL)asynchronous;
 
 /**
  This method measures each contents synchronous.

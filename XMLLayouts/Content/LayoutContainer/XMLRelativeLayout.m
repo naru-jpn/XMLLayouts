@@ -8,12 +8,12 @@
 
 - (void)refresh
 {
-    [self refreshWithAsyncronous:NO];
+    [self refreshWithAsynchronous:NO];
 }
 
-- (void)refreshWithAsyncronous:(BOOL)asyncronous
+- (void)refreshWithAsynchronous:(BOOL)asynchronous
 {
-    if (asyncronous) {
+    if (asynchronous) {
         dispatch_async(dispatch_get_main_queue(), ^{
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
                 [self estimate];

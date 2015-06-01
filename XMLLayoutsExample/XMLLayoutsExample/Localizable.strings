@@ -3,9 +3,9 @@
 
 "menu_1" = "1. 簡単な説明";
 
-"menu_2" = "2. LinearLayoutを使った配置例";
+"menu_2" = "2. LinearLayoutの配置例";
 
-"menu_3" = "3. RelativeLayoutを使った配置例";
+"menu_3" = "3. RelativeLayoutの配置例";
 
 "_welcome" = "ようこそ";
 
@@ -44,7 +44,5 @@
 "example3_content3" = "XMLIDStoreはIDの管理をします。IDはレイアウトの部品をそれぞれ区別するために使われます。IDはXML内での指定、新規作成ができます。子のレイアウトが同じIDを持っていないか注意してください。";
 
 "example3_content4" = "XMLImageManagerは画像リソースの管理をします。メモリキャッシュの有無の指定や、Resizableな画像の生成の仕方をXML上で指定することができます。";
-
-"example3_content5" = "Rはリソースを管理するクラス群をまとめます。";
 
 "example3_content5" = "Rはリソースを管理するクラス群をまとめます。";

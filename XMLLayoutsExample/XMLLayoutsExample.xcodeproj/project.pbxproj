@@ -115,7 +115,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43262B541B12A9350053DFF7 /* Example3(Table) */ = {
+		43262B541B12A9350053DFF7 /* Example3(RelativeLayout) */ = {
 			isa = PBXGroup;
 			children = (
 				433A1CFC1B14030E0001D61A /* TableCell.xml */,
@@ -123,7 +123,7 @@
 				4318997C1B132C96002D730A /* Example3ViewController.h */,
 				4318997D1B132C96002D730A /* Example3ViewController.m */,
 			);
-			name = "Example3(Table)";
+			name = "Example3(RelativeLayout)";
 			path = Example3;
 			sourceTree = "<group>";
 		};
@@ -174,8 +174,8 @@
 			children = (
 				43494CE01B1068220042AB7F /* Menu */,
 				43494D961B107B2E0042AB7F /* Example1 */,
-				43494DA91B12033A0042AB7F /* Example2 */,
-				43262B541B12A9350053DFF7 /* Example3(Table) */,
+				43494DA91B12033A0042AB7F /* Example2(LinearLayout) */,
+				43262B541B12A9350053DFF7 /* Example3(RelativeLayout) */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
@@ -340,13 +340,14 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		43494DA91B12033A0042AB7F /* Example2 */ = {
+		43494DA91B12033A0042AB7F /* Example2(LinearLayout) */ = {
 			isa = PBXGroup;
 			children = (
 				43494DAD1B1203880042AB7F /* Example2.xml */,
 				43494DAA1B1203540042AB7F /* Example2ViewController.h */,
 				43494DAB1B1203540042AB7F /* Example2ViewController.m */,
 			);
+			name = "Example2(LinearLayout)";
 			path = Example2;
 			sourceTree = "<group>";
 		};

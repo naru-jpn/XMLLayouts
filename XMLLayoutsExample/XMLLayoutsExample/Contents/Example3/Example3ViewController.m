@@ -30,6 +30,10 @@
     return _stubCell.contentView.containerWrappedSize.height;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0f;
+}
+
 - (void)setTableCellData:(NSDictionary *)data forCell:(UITableViewCell *)cell {
     [cell.contentView findViewByID:R.id(@"@id/line") work:^(UIView *view) {
         [view setBackgroundColor:data[@"color"]];
@@ -37,7 +41,7 @@
     [cell.contentView findViewByID:R.id(@"@id/message") work:^(UIView *view) {
         [(UILabel *)view setText:data[@"message"]];
     }];
-    [cell.contentView refreshAllLayoutWithAsynchronous:YES];
+    [cell.contentView refreshAllLayout];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
