@@ -1,0 +1,50 @@
+
+"close" = "閉じる";
+
+"menu_1" = "1. 簡単な説明";
+
+"menu_2" = "2. LinearLayoutを使った配置例";
+
+"menu_3" = "3. RelativeLayoutを使った配置例";
+
+"_welcome" = "ようこそ";
+
+"welcome" = "\'XMLLayouts\' へようこそ！ >";
+
+"_outline" = "概要";
+
+"outline_title_1" = "1. XMLLayoutsとは";
+
+"outline_description_1" = "　UIKitのビューの生成と配置を可読性のあるXML形式で記述できるライブラリです。Androidのlayout.xmlを再現してみたいというところから始まりました。";
+
+"outline_title_2" = "2. おすすめの場面";
+
+"outline_description_2" = "　マルチデバイスに対応した静的なUIを構成したい場合に使えます。他人が書いたUIもマージンや相互関係が全てコードで見え、より軽くシンプルな記述ができます。このサンプルアプリでは、XMLLayoutsを使って画面を構成しています。";
+
+"outline_title_3" = "3. できること";
+
+"outline_description_3" = "　XMLLayoutsは、Androidの機能にあるLinearLayoutとRelativeLayout及びRの機能を模しています。\n　LinearLayoutはビューを縦方向や横方向に並べます。ビューを整列させるのに計算する必要はありません。RelativeLayoutはビュー同士の相対関係を指定します。サムネイル画像が左上にあって、その隣に投稿された本文があって、その下に投稿時間があって...なんていうときに便利です。\n　Rは画像にidを付けたり、ローカライズされた文字列を取得したり、resizableな画像を生成したりする手助けをします。お馴染みのfindViewByIDも使えて、深い階層にあるビューを探し出します。\n\n　ビューの生成も簡単です。例えば、\n　　<UIView width=\"100\" height=\"100\" >\n　と書けば、100x100のビューが配置されます。マージンやパディング、背景色や画像の指定、フォント名とフォントサイズの指定などもできます。";
+
+"outline_title_4" = "4. 注意";
+
+"outline_description_4" = "　仕様の詳細はREADME.mdを参照してください。";
+
+"example2_devision" = "・等分割で並べる";
+
+"example2_interval" = "・等間隔で並べる";
+
+"example2_devision2" = "・異なる割合で並べる";
+
+"example2_arrange" = "・入れ子にして並べる";
+
+"example3_content1" = "XMLColorManagerは色の管理をします。カラーコードで色を指定したり、plistに色を定義しておいてXML内で指定できます。";
+
+"example3_content2" = "XMLTextManagerは文字列の管理をします。XML内ではローカライズされた文字列を指定できます。";
+
+"example3_content3" = "XMLIDStoreはIDの管理をします。IDはレイアウトの部品をそれぞれ区別するために使われます。IDはXML内での指定、新規作成ができます。子のレイアウトが同じIDを持っていないか注意してください。";
+
+"example3_content4" = "XMLImageManagerは画像リソースの管理をします。メモリキャッシュの有無の指定や、Resizableな画像の生成の仕方をXML上で指定することができます。";
+
+"example3_content5" = "Rはリソースを管理するクラス群をまとめます。";
+
+"example3_content5" = "Rはリソースを管理するクラス群をまとめます。";

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:XMLLayouts"
+      name = "XMLLayouts">
+      <Group
+         location = "group:Constants"
+         name = "Constants">
+         <FileRef
+            location = "group:XMLLayoutConstants.h">
+         </FileRef>
+         <FileRef
+            location = "group:XMLLayoutConstants.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Content"
+         name = "Content">
+         <Group
+            location = "group:LayoutContainer"
+            name = "LayoutContainer">
+            <Group
+               location = "group:XMLDependencyGraph"
+               name = "XMLDependencyGraph">
+               <FileRef
+                  location = "group:XMLDependency.h">
+               </FileRef>
+               <FileRef
+                  location = "group:XMLDependency.m">
+               </FileRef>
+               <FileRef
+                  location = "group:XMLDependencyGraph.h">
+               </FileRef>
+               <FileRef
+                  location = "group:XMLDependencyGraph.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:XMLLayoutContainer.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLLayoutContainer.m">
+            </FileRef>
+            <FileRef
+               location = "group:XMLLinearLayout.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLLinearLayout.m">
+            </FileRef>
+            <FileRef
+               location = "group:XMLRelativeLayout.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLRelativeLayout.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:LayoutContent"
+            name = "LayoutContent">
+            <FileRef
+               location = "group:XMLLayoutContent.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLLayoutContent.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:XMLLayout.h">
+         </FileRef>
+         <FileRef
+            location = "group:XMLLayout.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:R"
+         name = "R">
+         <Group
+            location = "group:Managers"
+            name = "Managers">
+            <FileRef
+               location = "group:XMLColorManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLColorManager.m">
+            </FileRef>
+            <FileRef
+               location = "group:XMLIDStores.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLIDStores.m">
+            </FileRef>
+            <FileRef
+               location = "group:XMLImageManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLImageManager.m">
+            </FileRef>
+            <FileRef
+               location = "group:XMLTextManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:XMLTextManager.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:R.h">
+         </FileRef>
+         <FileRef
+            location = "group:R.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Reader"
+         name = "Reader">
+         <FileRef
+            location = "group:XMLLayoutReader.h">
+         </FileRef>
+         <FileRef
+            location = "group:XMLLayoutReader.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:UIView+XMLLayouts"
+         name = "UIView+XMLLayouts">
+         <FileRef
+            location = "group:UIView+XMLLayouts.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+XMLLayouts.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:XMLLayouts.h">
+      </FileRef>
+   </Group>
+</Workspace>

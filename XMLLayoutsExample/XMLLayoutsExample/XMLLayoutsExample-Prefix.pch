@@ -1,0 +1,7 @@
+
+#ifndef XMLLayoutsExample_XMLLayoutExample_Prefix_pch
+#define XMLLayoutsExample_XMLLayoutExample_Prefix_pch
+
+#import "XMLLayouts.h"
+
+#endif

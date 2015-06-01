@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Layouts>
+    <LinearLayout width="match_parent" height="wrap_content" margin="20 0 0 0" orientation="vertical">
+        <!-- 1 -->
+        <UILabel width="wrap_content" height="wrap_content" margin="8 8 12 8" text="@string/example2_devision" font="HelveticaNeue:14" text_color="@color/text" />
+        <LinearLayout width="match_parent" height="60" orientation="horizontal">
+            <UIView height="match_parent" weight="1" background_color="407F" />
+            <UIView height="match_parent" weight="1" background_color="607F" />
+            <UIView height="match_parent" weight="1" background_color="807F" />
+            <UIView height="match_parent" weight="1" background_color="A07F" />
+            <UIView height="match_parent" weight="1" background_color="C07F" />
+        </LinearLayout>
+        <!-- 2 -->
+        <UILabel width="wrap_content" height="wrap_content" margin="24 8 8 0" text="@string/example2_interval" font="HelveticaNeue:14" text_color="@color/text" />
+        <LinearLayout width="match_parent" height="wrap_content" orientation="horizontal">
+            <UIView height="match_parent" weight="1" />
+            <UIView height="60" width="60" background_color="C07F" />
+            <UIView height="match_parent" weight="1" />
+            <UIView height="60" width="60" background_color="C07F" />
+            <UIView height="match_parent" weight="1" />
+            <UIView height="60" width="60" background_color="C07F" />
+            <UIView height="match_parent" weight="1" />
+            <UIView height="60" width="60" background_color="C07F" />
+            <UIView height="match_parent" weight="1" />
+        </LinearLayout>
+        <!-- 3 -->
+        <UILabel width="wrap_content" height="wrap_content" margin="24 8 8 0" text="@string/example2_devision2" font="HelveticaNeue:14" text_color="@color/text" />
+        <LinearLayout width="match_parent" height="60" orientation="horizontal">
+            <UIView height="match_parent" weight="1" background_color="407F" />
+            <UIView height="match_parent" weight="2" background_color="607F" />
+            <UIView height="match_parent" weight="3" background_color="807F" />
+            <UIView height="match_parent" weight="4" background_color="A07F" />
+            <UIView height="match_parent" weight="5" background_color="C07F" />
+        </LinearLayout>
+        <!-- 4 -->
+        <UILabel width="wrap_content" height="wrap_content" margin="24 8 8 0" text="@string/example2_arrange" font="HelveticaNeue:14" text_color="@color/text" />
+        <LinearLayout width="match_parent" height="100" orientation="horizontal">
+            <LinearLayout height="match_parent" weight="1" orientation="vertical">
+                <UIView width="match_parent" weight="1" background_color="407F" />
+                <UIView width="match_parent" weight="1" background_color="807F" />
+                <UIView width="match_parent" weight="1" background_color="C07F" />
+            </LinearLayout>
+            <LinearLayout height="match_parent" weight="1" orientation="horizontal">
+                <UIView height="match_parent" weight="1" background_color="607F" />
+                <UIView height="match_parent" weight="1" background_color="C07F" />
+            </LinearLayout>
+        </LinearLayout>
+        <UIButton width="80" height="60" title="@string/close" title_color="@color/blue" id="@+id/close" align_parent="bottom" layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</Layouts>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Layouts>
+    <RelativeLayout width="match_parent" height="match_parent">
+        <UIButton width="match_parent" height="match_parent" title="@string/close" title_color="@color/blue" id="@+id/close" />
+    </RelativeLayout>
+</Layouts>
