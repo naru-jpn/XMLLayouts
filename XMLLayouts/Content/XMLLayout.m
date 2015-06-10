@@ -133,6 +133,18 @@ UIEdgeInsets UIEdgeInsetsFromXMLLayoutEdgeInsets(XMLLayoutEdgeInsets insets) {
     return _superLayout.size.height;
 }
 
+- (XMLLayoutEdgeInsets)padding
+{
+    if (_visibility == XMLLayoutVisibilityGone) return XMLLayoutEdgeInsetsZero;
+    else return _padding;
+}
+
+- (XMLLayoutEdgeInsets)margin
+{
+    if (_visibility == XMLLayoutVisibilityGone) return XMLLayoutEdgeInsetsZero;
+    else return _margin;
+}
+
 #pragma mark - properties
 
 - (XMLLayoutGravity)gravitiesWithString:(NSString *)string
@@ -164,6 +176,20 @@ UIEdgeInsets UIEdgeInsetsFromXMLLayoutEdgeInsets(XMLLayoutEdgeInsets insets) {
         return XMLLayoutGravityCenter;
     } else {
         return XMLLayoutGravityDefault;
+    }
+}
+
+- (XMLLayoutVisibility)visibilityWithString:(NSString *)string
+{
+    string = string.lowercaseString;
+    if ([string isEqualToString:kXMLLayoutVisilityVisible]) {
+        return XMLLayoutVisibilityVisible;
+    } else if ([string isEqualToString:kXMLLayoutVisilityInvisible]) {
+        return XMLLayoutVisibilityInvisible;
+    } else if ([string isEqualToString:kXMLLayoutVisilityGone]) {
+        return XMLLayoutVisibilityGone;
+    } else {
+        return XMLLayoutVisibilityVisible;
     }
 }
 
@@ -263,6 +289,9 @@ UIEdgeInsets UIEdgeInsetsFromXMLLayoutEdgeInsets(XMLLayoutEdgeInsets insets) {
         [self setGravity:[self gravitiesWithString:attribute[kXMLLayoutGravity]]];
         [self setLayoutGravity:[self gravitiesWithString:attribute[kXMLLayoutLayoutGravity]]];
         
+        // visibility
+        [self setVisibility:[self visibilityWithString:attribute[kXMLLayoutVisility]]];
+
         // align parent
         [_dependency setAlignParent:[self alignParentsWithString:attribute[kXMLRelativityAlignParent]]];
         

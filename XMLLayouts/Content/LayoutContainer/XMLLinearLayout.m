@@ -48,6 +48,13 @@
 
 - (void)estimate
 {
+    // check visibility
+    [self.view setHidden:(self.visibility != XMLLayoutVisibilityVisible)];
+    if (self.visibility == XMLLayoutVisibilityGone) {
+        self.size = CGSizeZero;
+        return;
+    }
+    
     // estimated width
     CGFloat width = 0.0f;
     if (self.sizeInfo.width.mode == XMLLayoutLengthModePPI) {
@@ -99,6 +106,13 @@
 
 - (void)measure
 {
+    // check visibility
+    [self.view setHidden:(self.visibility != XMLLayoutVisibilityVisible)];
+    if (self.visibility == XMLLayoutVisibilityGone) {
+        self.size = CGSizeZero;
+        return;
+    }
+    
     if (_orientation == XMLLayoutOrientationHorizontal) {
         [self measureHorizontal];
     } else if (_orientation == XMLLayoutOrientationVertical) {
@@ -220,6 +234,8 @@
 
 - (void)layout
 {
+    if (self.visibility == XMLLayoutVisibilityGone) return;
+    
     if (_orientation == XMLLayoutOrientationHorizontal) {
         [self layoutHorizontal];
     } else if (_orientation == XMLLayoutOrientationVertical) {

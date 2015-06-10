@@ -35,7 +35,14 @@
 #pragma mark - measure
 
 - (void)estimate
-{
+{    
+    // check visibility
+    [self.view setHidden:(self.visibility != XMLLayoutVisibilityVisible)];
+    if (self.visibility == XMLLayoutVisibilityGone) {
+        self.size = CGSizeZero;
+        return;
+    }
+
     // estimated width
     CGFloat width = 0.0f;
     if (self.sizeInfo.width.mode == XMLLayoutLengthModePPI) {
@@ -85,6 +92,13 @@
 
 - (void)measure
 {
+    // check visibility
+    [self.view setHidden:(self.visibility != XMLLayoutVisibilityVisible)];
+    if (self.visibility == XMLLayoutVisibilityGone) {
+        self.size = CGSizeZero;
+        return;
+    }
+    
     XMLDependencyGraph *graph = [XMLDependencyGraph graphWithXMLLayouts:self.subLayouts];
     
     // measure horizontal
@@ -322,6 +336,8 @@
 
 - (void)layout
 {
+    if (self.visibility == XMLLayoutVisibilityGone) return;
+    
     // set my frame
     CGRect frame = CGRectMake((self.margin.left + self.origin.x), (self.margin.top + self.origin.y), self.size.width, self.size.height);
     if (self.superLayout) frame = (CGRect){.origin=self.origin, .size=self.size};

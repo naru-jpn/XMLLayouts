@@ -37,6 +37,11 @@ NSString * const kXMLLayoutGravityCenterVertical = @"center_vertical";
 NSString * const kXMLLayoutGravityCenter = @"center";
 NSString * const kXMLLayoutLayoutGravity = @"layout_gravity";
 
+NSString * const kXMLLayoutVisility = @"visibility";
+NSString * const kXMLLayoutVisilityVisible = @"visible";
+NSString * const kXMLLayoutVisilityInvisible = @"invisible";
+NSString * const kXMLLayoutVisilityGone = @"gone";
+
 /* layout content */
 NSString * const kXMLLayoutViewPropertyFont = @"font";
 NSString * const kXMLLayoutViewPropertyText = @"text";

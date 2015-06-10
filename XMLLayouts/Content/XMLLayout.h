@@ -28,6 +28,13 @@ enum XMLLayoutGravity {
 };
 typedef NSInteger XMLLayoutGravity;
 
+enum XMLLayoutVisibility {
+    XMLLayoutVisibilityVisible,
+    XMLLayoutVisibilityInvisible,
+    XMLLayoutVisibilityGone
+};
+typedef NSInteger XMLLayoutVisibility;
+
 /* structs */
 
 struct XMLLayoutLength {
@@ -92,23 +99,24 @@ OBJC_EXTERN UIEdgeInsets UIEdgeInsetsFromXMLLayoutEdgeInsets(XMLLayoutEdgeInsets
 
 @interface XMLLayout : NSObject
 
-@property NSInteger id;
-@property NSInteger depth;
+@property (nonatomic) NSInteger id;
+@property (nonatomic) NSInteger depth;
 @property (nonatomic, strong) UIView *view;
 @property (nonatomic, readonly, weak) XMLLayoutContainer *superLayout;
 @property (nonatomic, strong) XMLDependency *dependency;
 
 // attributes (common)
-@property CGSize size;
-@property CGPoint origin;
-@property XMLLayoutEdgeInsets margin;
-@property XMLLayoutEdgeInsets padding;
-@property XMLLayoutSize sizeInfo;
-@property XMLLayoutGravity gravity;
-@property XMLLayoutGravity layoutGravity;
-@property CGSize maxSize;
-@property CGSize minSize;
-@property CGFloat weight;
+@property (nonatomic) CGSize size;
+@property (nonatomic) CGPoint origin;
+@property (nonatomic) XMLLayoutEdgeInsets margin;
+@property (nonatomic) XMLLayoutEdgeInsets padding;
+@property (nonatomic) XMLLayoutSize sizeInfo;
+@property (nonatomic) XMLLayoutGravity gravity;
+@property (nonatomic) XMLLayoutGravity layoutGravity;
+@property (nonatomic) CGSize maxSize;
+@property (nonatomic) CGSize minSize;
+@property (nonatomic) CGFloat weight;
+@property (nonatomic) XMLLayoutVisibility visibility;
 
 - (id)initWithAttirbute:(NSDictionary *)attribute;
 

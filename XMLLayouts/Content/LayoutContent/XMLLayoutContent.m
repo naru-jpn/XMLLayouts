@@ -36,6 +36,13 @@
 
 - (void)measureWithConstrained:(CGSize)constrained
 {
+    // check visibility
+    [self.view setHidden:(self.visibility != XMLLayoutVisibilityVisible)];
+    if (self.visibility == XMLLayoutVisibilityGone) {
+        self.size = CGSizeZero;
+        return;
+    }
+    
     CGSize size = self.size;
     
     BOOL isWrapped = ((self.sizeInfo.width.mode==XMLLayoutLengthModeWrapContent)||(self.sizeInfo.height.mode==XMLLayoutLengthModeWrapContent));

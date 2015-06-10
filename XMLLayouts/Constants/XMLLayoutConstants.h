@@ -38,6 +38,11 @@ OBJC_EXPORT NSString * const kXMLLayoutGravityCenterVertical;
 OBJC_EXPORT NSString * const kXMLLayoutGravityCenter;
 OBJC_EXPORT NSString * const kXMLLayoutLayoutGravity;
 
+OBJC_EXPORT NSString * const kXMLLayoutVisility;
+OBJC_EXPORT NSString * const kXMLLayoutVisilityVisible;
+OBJC_EXPORT NSString * const kXMLLayoutVisilityInvisible;
+OBJC_EXPORT NSString * const kXMLLayoutVisilityGone;
+
 /* layout content */
 OBJC_EXPORT NSString * const kXMLLayoutViewPropertyFont;
 OBJC_EXPORT NSString * const kXMLLayoutViewPropertyText;
