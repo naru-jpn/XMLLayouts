@@ -12,6 +12,18 @@
 
 @implementation XMLLayoutContainer
 
+#pragma mark - shared measure queue
+
++ (dispatch_queue_t)sharedMeasureQueue
+{
+    static dispatch_queue_t sharedQueue;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedQueue = dispatch_queue_create("com.jpn.naru.measure_container", DISPATCH_QUEUE_SERIAL);
+    });
+    return sharedQueue;
+}
+
 #pragma mark - sub layout
 
 - (NSArray *)subLayouts
@@ -165,9 +177,8 @@
 
 - (CGSize)wrappedSize
 {
-    [self estimate];
-    [self measure];
-    return CGSizeMake(self.margin.left+self.size.width+self.margin.right, self.margin.top+self.size.height+self.margin.bottom);
+    // need to override
+    return CGSizeZero;
 }
 
 #pragma mark - life cycle

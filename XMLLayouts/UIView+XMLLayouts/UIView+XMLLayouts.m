@@ -207,7 +207,7 @@
 - (void)refreshAllLayout
 {
     for (XMLLayoutContainer *layoutContainer in self.layoutContainers) {
-        [layoutContainer refreshWithAsynchronous:NO];
+        [layoutContainer refreshWithAsynchronous:YES];
     }
 }
 

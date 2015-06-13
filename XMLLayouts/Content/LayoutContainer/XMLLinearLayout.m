@@ -1,7 +1,9 @@
 
 #import "XMLLinearLayout.h"
 
-@implementation XMLLinearLayout
+@implementation XMLLinearLayout {
+    __weak dispatch_queue_t _measureQueue;
+}
 
 #pragma mark - attribute
 
@@ -20,19 +22,17 @@
 
 - (void)refresh
 {
-    [self refreshWithAsynchronous:NO];
+    [self refreshWithAsynchronous:YES];
 }
 
 - (void)refreshWithAsynchronous:(BOOL)asynchronous
 {
     if (asynchronous) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-                [self estimate];
-                [self measure];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self layout];
-                });
+        dispatch_async(_measureQueue, ^{
+            [self estimate];
+            [self measure];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self layout];
             });
         });
     } else {
@@ -230,6 +230,17 @@
     }
 }
 
+- (CGSize)wrappedSize
+{
+    __block CGSize wrappedSize;
+    dispatch_sync(_measureQueue, ^{
+        [self estimate];
+        [self measure];
+        wrappedSize = CGSizeMake(self.margin.left+self.size.width+self.margin.right, self.margin.top+self.size.height+self.margin.bottom);
+    });
+    return wrappedSize;
+}
+
 #pragma mark - layout
 
 - (void)layout
@@ -382,6 +393,8 @@
 {
     self = [super initWithAttirbute:attribute];
     if (self) {
+        // get queue to measure size
+        _measureQueue = [XMLLayoutContainer sharedMeasureQueue];
         // orientation
         XMLLayoutOrientation orientation = [self orientationFromString:attribute[kXMLLayoutOrientation]];
         [self setOrientation:orientation];

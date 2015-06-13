@@ -6,6 +6,9 @@
 
 @property (nonatomic, readonly, strong) NSMutableArray *subLayouts;
 
+/** Return shared queue to measure container or child size  */
++ (dispatch_queue_t)sharedMeasureQueue;
+
 - (void)addSubLayout:(XMLLayout *)layout;
 - (void)insertSubLayout:(XMLLayout *)layout atIndex:(NSInteger)index;
 - (void)removeSubLayout:(XMLLayout *)layout;
