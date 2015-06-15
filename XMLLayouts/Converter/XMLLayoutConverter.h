@@ -14,17 +14,18 @@ OBJC_EXPORT NSString * const kXMLIntermediateObjectChildren;
 /**
  * This class converts XML file to intermediate object and intermediate object to layout object.
  * Intermediate object is composed of some arrray and dictionary.
- * Format of intermediate object :
- * {
- *   "name" = name,
- *   "properties" = {
- *     "property1" = value1,
- *     "property2" = value2, ...
- *   },
- *   ("children" = [child1, child2, ...]) - for container
- * }
  */
 @interface XMLLayoutConverter : NSObject <NSXMLParserDelegate>
+
+// Format of intermediate object :
+// {
+//   "name" = name,
+//   "properties" = {
+//      "property1" = value1,
+//      "property2" = value2, ...
+//   },
+//   ("children" = [child1, child2, ...]) - for container
+// }
 
 @property (nonatomic, weak) id <XMLLayoutConverterDelegate> delegate;
 
