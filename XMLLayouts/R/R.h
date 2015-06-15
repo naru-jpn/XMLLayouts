@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "XMLIDStores.h"
+#import "XMLIDStore.h"
 #import "XMLTextManager.h"
 #import "XMLColorManager.h"
 #import "XMLImageManager.h"

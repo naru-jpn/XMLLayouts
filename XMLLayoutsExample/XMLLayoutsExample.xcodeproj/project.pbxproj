@@ -25,7 +25,7 @@
 		43494D8C1B1072A60042AB7F /* XMLLayoutContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D701B1072A60042AB7F /* XMLLayoutContent.m */; };
 		43494D8D1B1072A60042AB7F /* XMLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D721B1072A60042AB7F /* XMLLayout.m */; };
 		43494D8E1B1072A60042AB7F /* XMLColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D761B1072A60042AB7F /* XMLColorManager.m */; };
-		43494D8F1B1072A60042AB7F /* XMLIDStores.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D781B1072A60042AB7F /* XMLIDStores.m */; };
+		43494D8F1B1072A60042AB7F /* XMLIDStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D781B1072A60042AB7F /* XMLIDStore.m */; };
 		43494D901B1072A60042AB7F /* XMLImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7A1B1072A60042AB7F /* XMLImageManager.m */; };
 		43494D911B1072A60042AB7F /* XMLTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7C1B1072A60042AB7F /* XMLTextManager.m */; };
 		43494D921B1072A60042AB7F /* R.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7E1B1072A60042AB7F /* R.m */; };
@@ -75,8 +75,8 @@
 		43494D721B1072A60042AB7F /* XMLLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLLayout.m; sourceTree = "<group>"; };
 		43494D751B1072A60042AB7F /* XMLColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLColorManager.h; sourceTree = "<group>"; };
 		43494D761B1072A60042AB7F /* XMLColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLColorManager.m; sourceTree = "<group>"; };
-		43494D771B1072A60042AB7F /* XMLIDStores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLIDStores.h; sourceTree = "<group>"; };
-		43494D781B1072A60042AB7F /* XMLIDStores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLIDStores.m; sourceTree = "<group>"; };
+		43494D771B1072A60042AB7F /* XMLIDStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLIDStore.h; sourceTree = "<group>"; };
+		43494D781B1072A60042AB7F /* XMLIDStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLIDStore.m; sourceTree = "<group>"; };
 		43494D791B1072A60042AB7F /* XMLImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLImageManager.h; sourceTree = "<group>"; };
 		43494D7A1B1072A60042AB7F /* XMLImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLImageManager.m; sourceTree = "<group>"; };
 		43494D7B1B1072A60042AB7F /* XMLTextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTextManager.h; sourceTree = "<group>"; };
@@ -279,8 +279,8 @@
 		43494D741B1072A60042AB7F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				43494D771B1072A60042AB7F /* XMLIDStores.h */,
-				43494D781B1072A60042AB7F /* XMLIDStores.m */,
+				43494D771B1072A60042AB7F /* XMLIDStore.h */,
+				43494D781B1072A60042AB7F /* XMLIDStore.m */,
 				43494D751B1072A60042AB7F /* XMLColorManager.h */,
 				43494D761B1072A60042AB7F /* XMLColorManager.m */,
 				43494D791B1072A60042AB7F /* XMLImageManager.h */,
@@ -446,7 +446,7 @@
 				4318997E1B132C96002D730A /* Example3ViewController.m in Sources */,
 				43494DA61B1089A70042AB7F /* OutlineViewController.m in Sources */,
 				43E42A921B2C75AC00818F1B /* XMLLayoutConverter.m in Sources */,
-				43494D8F1B1072A60042AB7F /* XMLIDStores.m in Sources */,
+				43494D8F1B1072A60042AB7F /* XMLIDStore.m in Sources */,
 				43494D881B1072A60042AB7F /* XMLDependencyGraph.m in Sources */,
 				43494D8D1B1072A60042AB7F /* XMLLayout.m in Sources */,
 				43494D8E1B1072A60042AB7F /* XMLColorManager.m in Sources */,

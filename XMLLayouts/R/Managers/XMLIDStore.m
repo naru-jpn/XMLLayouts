@@ -1,5 +1,5 @@
 
-#import "XMLIDStores.h"
+#import "XMLIDStore.h"
 
 @interface XMLIDStore ()
 @property (nonatomic, strong) NSMutableDictionary *store;
