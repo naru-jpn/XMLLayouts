@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Layouts>
+<XMLLayouts>
     <RelativeLayout width="match_parent" height="wrap_content" padding="8" background_color="FFF">
         <UIView width="4" margin_right="8" align_top="@+id/message" align_bottom="@id/message" id="@+id/line" />
         <UILabel to_right_of="@id/line" align_parent="right" height="wrap_content" font="HelveticaNeue:14" text_color="@color/text" number_of_lines="0" id="@id/message"  background_color="FFF" />
     </RelativeLayout>
-</Layouts>
+</XMLLayouts>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Layouts>
+<XMLLayouts>
     <LinearLayout width="match_parent" height="wrap_content" margin="20 0 0 0" orientation="vertical">
         <!-- 1 -->
         <UILabel width="wrap_content" height="wrap_content" margin="8 8 12 8" text="@string/example2_devision" font="HelveticaNeue:14" text_color="@color/text" />
@@ -47,4 +47,4 @@
         </LinearLayout>
         <UIButton width="80" height="60" title="@string/close" title_color="@color/blue" id="@+id/close" align_parent="bottom" layout_gravity="center_horizontal"/>
     </LinearLayout>
-</Layouts>
+</XMLLayouts>
