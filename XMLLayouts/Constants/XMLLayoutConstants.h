@@ -3,6 +3,8 @@
 #define Layouts_XMLLayoutConstants_h
 
 /* common */
+OBJC_EXPORT NSString * const kXMLLayouts;
+
 OBJC_EXPORT NSString * const kXMLLayoutID;
 
 OBJC_EXPORT NSString * const kXMLLayoutWidth;
@@ -79,6 +81,12 @@ OBJC_EXPORT NSString * const kXMLRelativityAlignParentRight;
 OBJC_EXPORT NSString * const kXMLRelativityAlignParentCenterHorizontal;
 OBJC_EXPORT NSString * const kXMLRelativityAlignParentCenterVertical;
 OBJC_EXPORT NSString * const kXMLRelativityAlignParentCenter;
+
+/* converter */
+OBJC_EXPORT NSString * const kXMLLayoutConverterInclude;
+OBJC_EXPORT NSString * const kXMLLayoutConverterIncludedXML;
+OBJC_EXPORT NSString * const kXMLLayoutConverterIncludedResourceName;
+OBJC_EXPORT NSString * const kXMLLayoutConverterIncludedParent;
 
 /* xml reader */
 OBJC_EXPORT NSString * const kXMLLayoutReaderInclude;

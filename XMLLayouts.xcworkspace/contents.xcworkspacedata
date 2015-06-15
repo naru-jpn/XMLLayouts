@@ -114,6 +114,16 @@
          </Group>
       </Group>
       <Group
+         location = "group:Converter"
+         name = "Converter">
+         <FileRef
+            location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/Converter/XMLLayoutConverter.h">
+         </FileRef>
+         <FileRef
+            location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/Converter/XMLLayoutConverter.m">
+         </FileRef>
+      </Group>
+      <Group
          location = "group:Reader"
          name = "Reader">
          <FileRef

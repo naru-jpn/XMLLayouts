@@ -40,6 +40,7 @@
 		43494DAE1B1203880042AB7F /* Example2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43494DAD1B1203880042AB7F /* Example2.xml */; };
 		43494DB01B120AAD0042AB7F /* XMLColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43494DAF1B120AAD0042AB7F /* XMLColors.plist */; };
 		4393DBC11B15738B005A3B7D /* TableClose.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4393DBC01B15738B005A3B7D /* TableClose.xml */; };
+		43E42A921B2C75AC00818F1B /* XMLLayoutConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,8 @@
 		43494DAD1B1203880042AB7F /* Example2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Example2.xml; sourceTree = "<group>"; };
 		43494DAF1B120AAD0042AB7F /* XMLColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XMLColors.plist; sourceTree = "<group>"; };
 		4393DBC01B15738B005A3B7D /* TableClose.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TableClose.xml; sourceTree = "<group>"; };
+		43E42A901B2C75AC00818F1B /* XMLLayoutConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLLayoutConverter.h; sourceTree = "<group>"; };
+		43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLLayoutConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,7 @@
 				43494D5E1B1072A60042AB7F /* Constants */,
 				43494D611B1072A60042AB7F /* Content */,
 				43494D731B1072A60042AB7F /* R */,
+				43E42A8F1B2C75AC00818F1B /* Converter */,
 				43494D7F1B1072A60042AB7F /* Reader */,
 				43494D821B1072A60042AB7F /* UIView+XMLLayouts */,
 			);
@@ -351,6 +355,15 @@
 			path = Example2;
 			sourceTree = "<group>";
 		};
+		43E42A8F1B2C75AC00818F1B /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				43E42A901B2C75AC00818F1B /* XMLLayoutConverter.h */,
+				43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,6 +459,7 @@
 				43494D941B1072A60042AB7F /* UIView+XMLLayouts.m in Sources */,
 				4318997E1B132C96002D730A /* Example3ViewController.m in Sources */,
 				43494DA61B1089A70042AB7F /* OutlineViewController.m in Sources */,
+				43E42A921B2C75AC00818F1B /* XMLLayoutConverter.m in Sources */,
 				43494D8F1B1072A60042AB7F /* XMLIDStores.m in Sources */,
 				43494D881B1072A60042AB7F /* XMLDependencyGraph.m in Sources */,
 				43494D8D1B1072A60042AB7F /* XMLLayout.m in Sources */,
