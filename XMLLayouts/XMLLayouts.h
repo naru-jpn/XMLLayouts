@@ -27,5 +27,4 @@
 #import "XMLLinearLayout.h"
 #import "XMLRelativeLayout.h"
 #import "XMLLayoutConverter.h"
-#import "XMLLayoutReader.h"
 #import "UIView+XMLLayouts.h"

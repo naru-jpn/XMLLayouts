@@ -124,16 +124,6 @@
          </FileRef>
       </Group>
       <Group
-         location = "group:Reader"
-         name = "Reader">
-         <FileRef
-            location = "group:XMLLayoutReader.h">
-         </FileRef>
-         <FileRef
-            location = "group:XMLLayoutReader.m">
-         </FileRef>
-      </Group>
-      <Group
          location = "group:UIView+XMLLayouts"
          name = "UIView+XMLLayouts">
          <FileRef

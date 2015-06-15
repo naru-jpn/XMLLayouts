@@ -29,16 +29,16 @@ OBJC_EXPORT NSString * const kXMLIntermediateObjectChildren;
 @property (nonatomic, weak) id <XMLLayoutConverterDelegate> delegate;
 
 /** Return layouts with resource name */
-+ (void)layoutsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
++ (void)convertXMLToLayoutsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
 
 /** Return intermediate objects */
-- (void)convertXMLWithResourceName:(NSString *)resourceName;
+- (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName;
 
 /** Return intermediate objects with completion */
-- (void)convertXMLWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
+- (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
 
 /** Return intermediate objects with completion */
-+ (void)convertXMLWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
++ (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion;
 
 /** Return layouts */
 - (NSArray *)layoutsWithIntermediateObjects:(NSArray *)objects;

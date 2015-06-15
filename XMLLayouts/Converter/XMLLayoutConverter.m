@@ -22,26 +22,26 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
 
 #pragma mark - convert xml file to layouts
 
-+ (void)layoutsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
++ (void)convertXMLToLayoutsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
 {
-    [self convertXMLWithResourceName:resourceName completion:^(XMLLayoutConverter *converter, NSArray *objects, NSError *error) {
+    [self convertXMLToIntermediateObjectsWithResourceName:resourceName completion:^(XMLLayoutConverter *converter, NSArray *objects, NSError *error) {
         if (error) {
             if (completion) completion(converter, nil, error);
         } else {
-            NSArray *layout = [self layoutsWithIntermediateObjects:objects];
-            if (completion) completion(converter, layout, nil);
+            NSArray *layouts = [self layoutsWithIntermediateObjects:objects];
+            if (completion) completion(converter, layouts, nil);
         }
     }];
 }
 
 #pragma mark - convert xml file
 
-- (void)convertXMLWithResourceName:(NSString *)resourceName
+- (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName
 {
-    [self convertXMLWithResourceName:resourceName completion:nil];
+    [self convertXMLToIntermediateObjectsWithResourceName:resourceName completion:nil];
 }
 
-- (void)convertXMLWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
+- (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
 {
     self.completion = completion;
     self.resourceName = resourceName;
@@ -60,9 +60,9 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
     });
 }
 
-+ (void)convertXMLWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
++ (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
 {
-    [[XMLLayoutConverter new] convertXMLWithResourceName:resourceName completion:completion];
+    [[XMLLayoutConverter new] convertXMLToIntermediateObjectsWithResourceName:resourceName completion:completion];
 }
 
 #pragma mark - xml parser delegate
@@ -134,7 +134,7 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
     dispatch_async(dispatch_get_main_queue(), ^{
         NSDictionary *replacedObject = (NSDictionary *)_replacedObjects.lastObject;
         NSString *resourceName = replacedObject[kXMLLayoutConverterIncludedResourceName];
-        [XMLLayoutConverter convertXMLWithResourceName:resourceName completion:^(XMLLayoutConverter *converter, NSArray *objects, NSError *error) {
+        [XMLLayoutConverter convertXMLToIntermediateObjectsWithResourceName:resourceName completion:^(XMLLayoutConverter *converter, NSArray *objects, NSError *error) {
             NSMutableArray *parent = (NSMutableArray *)replacedObject[kXMLLayoutConverterIncludedParent];
             NSInteger index = [parent indexOfObject:replacedObject];
             objects = [[objects reverseObjectEnumerator] allObjects];

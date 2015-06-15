@@ -29,7 +29,6 @@
 		43494D901B1072A60042AB7F /* XMLImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7A1B1072A60042AB7F /* XMLImageManager.m */; };
 		43494D911B1072A60042AB7F /* XMLTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7C1B1072A60042AB7F /* XMLTextManager.m */; };
 		43494D921B1072A60042AB7F /* R.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D7E1B1072A60042AB7F /* R.m */; };
-		43494D931B1072A60042AB7F /* XMLLayoutReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D811B1072A60042AB7F /* XMLLayoutReader.m */; };
 		43494D941B1072A60042AB7F /* UIView+XMLLayouts.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D841B1072A60042AB7F /* UIView+XMLLayouts.m */; };
 		43494D991B107B620042AB7F /* Example1NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D981B107B620042AB7F /* Example1NavigationController.m */; };
 		43494D9E1B107BF40042AB7F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43494D9D1B107BF40042AB7F /* WelcomeViewController.m */; };
@@ -84,8 +83,6 @@
 		43494D7C1B1072A60042AB7F /* XMLTextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLTextManager.m; sourceTree = "<group>"; };
 		43494D7D1B1072A60042AB7F /* R.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = R.h; sourceTree = "<group>"; };
 		43494D7E1B1072A60042AB7F /* R.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = R.m; sourceTree = "<group>"; };
-		43494D801B1072A60042AB7F /* XMLLayoutReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLLayoutReader.h; sourceTree = "<group>"; };
-		43494D811B1072A60042AB7F /* XMLLayoutReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLLayoutReader.m; sourceTree = "<group>"; };
 		43494D831B1072A60042AB7F /* UIView+XMLLayouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMLLayouts.h"; sourceTree = "<group>"; };
 		43494D841B1072A60042AB7F /* UIView+XMLLayouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMLLayouts.m"; sourceTree = "<group>"; };
 		43494D851B1072A60042AB7F /* XMLLayouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLLayouts.h; sourceTree = "<group>"; };
@@ -209,7 +206,6 @@
 				43494D611B1072A60042AB7F /* Content */,
 				43494D731B1072A60042AB7F /* R */,
 				43E42A8F1B2C75AC00818F1B /* Converter */,
-				43494D7F1B1072A60042AB7F /* Reader */,
 				43494D821B1072A60042AB7F /* UIView+XMLLayouts */,
 			);
 			name = XMLLayouts;
@@ -293,15 +289,6 @@
 				43494D7C1B1072A60042AB7F /* XMLTextManager.m */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		43494D7F1B1072A60042AB7F /* Reader */ = {
-			isa = PBXGroup;
-			children = (
-				43494D801B1072A60042AB7F /* XMLLayoutReader.h */,
-				43494D811B1072A60042AB7F /* XMLLayoutReader.m */,
-			);
-			path = Reader;
 			sourceTree = "<group>";
 		};
 		43494D821B1072A60042AB7F /* UIView+XMLLayouts */ = {
@@ -451,7 +438,6 @@
 				43494D911B1072A60042AB7F /* XMLTextManager.m in Sources */,
 				43494D8B1B1072A60042AB7F /* XMLRelativeLayout.m in Sources */,
 				43494D861B1072A60042AB7F /* XMLLayoutConstants.m in Sources */,
-				43494D931B1072A60042AB7F /* XMLLayoutReader.m in Sources */,
 				43494D8C1B1072A60042AB7F /* XMLLayoutContent.m in Sources */,
 				43494D8A1B1072A60042AB7F /* XMLLinearLayout.m in Sources */,
 				43494D991B107B620042AB7F /* Example1NavigationController.m in Sources */,
