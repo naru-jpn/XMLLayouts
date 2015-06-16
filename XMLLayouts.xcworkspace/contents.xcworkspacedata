@@ -122,6 +122,12 @@
          <FileRef
             location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/Converter/XMLLayoutConverter.m">
          </FileRef>
+         <FileRef
+            location = "group:XMLIntermediateObjectCache.h">
+         </FileRef>
+         <FileRef
+            location = "group:XMLIntermediateObjectCache.m">
+         </FileRef>
       </Group>
       <Group
          location = "group:UIView+XMLLayouts"

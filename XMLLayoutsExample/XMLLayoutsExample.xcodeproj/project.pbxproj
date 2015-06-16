@@ -39,6 +39,7 @@
 		43494DAE1B1203880042AB7F /* Example2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43494DAD1B1203880042AB7F /* Example2.xml */; };
 		43494DB01B120AAD0042AB7F /* XMLColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43494DAF1B120AAD0042AB7F /* XMLColors.plist */; };
 		4393DBC11B15738B005A3B7D /* TableClose.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4393DBC01B15738B005A3B7D /* TableClose.xml */; };
+		43C4D8D51B2FA58900907E6F /* XMLIntermediateObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C4D8D41B2FA58900907E6F /* XMLIntermediateObjectCache.m */; };
 		43E42A921B2C75AC00818F1B /* XMLLayoutConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */; };
 /* End PBXBuildFile section */
 
@@ -96,10 +97,12 @@
 		43494DA51B1089A70042AB7F /* OutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineViewController.m; sourceTree = "<group>"; };
 		43494DA71B108AAD0042AB7F /* Outline.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Outline.xml; sourceTree = "<group>"; };
 		43494DAA1B1203540042AB7F /* Example2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example2ViewController.h; sourceTree = "<group>"; };
-		43494DAB1B1203540042AB7F /* Example2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example2ViewController.m; sourceTree = "<group>"; };
+		43494DAB1B1203540042AB7F /* Example2ViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = Example2ViewController.m; sourceTree = "<group>"; };
 		43494DAD1B1203880042AB7F /* Example2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Example2.xml; sourceTree = "<group>"; };
 		43494DAF1B120AAD0042AB7F /* XMLColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XMLColors.plist; sourceTree = "<group>"; };
 		4393DBC01B15738B005A3B7D /* TableClose.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TableClose.xml; sourceTree = "<group>"; };
+		43C4D8D31B2FA58900907E6F /* XMLIntermediateObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLIntermediateObjectCache.h; sourceTree = "<group>"; };
+		43C4D8D41B2FA58900907E6F /* XMLIntermediateObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLIntermediateObjectCache.m; sourceTree = "<group>"; };
 		43E42A901B2C75AC00818F1B /* XMLLayoutConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLLayoutConverter.h; sourceTree = "<group>"; };
 		43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLLayoutConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +350,8 @@
 			children = (
 				43E42A901B2C75AC00818F1B /* XMLLayoutConverter.h */,
 				43E42A911B2C75AC00818F1B /* XMLLayoutConverter.m */,
+				43C4D8D31B2FA58900907E6F /* XMLIntermediateObjectCache.h */,
+				43C4D8D41B2FA58900907E6F /* XMLIntermediateObjectCache.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				43494D881B1072A60042AB7F /* XMLDependencyGraph.m in Sources */,
 				43494D8D1B1072A60042AB7F /* XMLLayout.m in Sources */,
 				43494D8E1B1072A60042AB7F /* XMLColorManager.m in Sources */,
+				43C4D8D51B2FA58900907E6F /* XMLIntermediateObjectCache.m in Sources */,
 				43494D901B1072A60042AB7F /* XMLImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

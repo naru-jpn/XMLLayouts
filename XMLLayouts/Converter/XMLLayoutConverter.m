@@ -3,6 +3,7 @@
 #import "XMLLayoutConstants.h"
 #import "XMLLinearLayout.h"
 #import "XMLRelativeLayout.h"
+#import <malloc/malloc.h>
 
 NSString * const kXMLIntermediateObjectName = @"name";
 NSString * const kXMLIntermediateObjectAttributes = @"attributes";
@@ -17,6 +18,7 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
 @end
 
 @implementation XMLLayoutConverter {
+    BOOL _cached;
     __weak NSMutableArray *_currentSpot;
 }
 
@@ -43,8 +45,16 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
 
 - (void)convertXMLToIntermediateObjectsWithResourceName:(NSString *)resourceName completion:(void (^)(XMLLayoutConverter *, NSArray *, NSError *))completion
 {
+    // set parameters
     self.completion = completion;
     self.resourceName = resourceName;
+    // check cache
+    if ([XMLIntermediateObjectCache isIntermediateObjectsForKey:_resourceName]) {
+        _cached = YES;
+        _intermediateObjects = [XMLIntermediateObjectCache intermediateObjectsForKey:resourceName].mutableCopy;
+        [self XMLDidConvert];
+        return;
+    }
     _intermediateObjects = [NSMutableArray array];
     _spotHistory = [NSMutableArray arrayWithObject:_intermediateObjects];
     _replacedObjects = [NSMutableArray array];
@@ -152,6 +162,9 @@ NSString * const kXMLIntermediateObjectChildren = @"children";
 
 - (void)XMLDidConvert
 {
+    if (!_cached && _intermediateObjects) {
+        [XMLIntermediateObjectCache addIntermediateObjects:_intermediateObjects key:_resourceName];
+    }
     if (_completion) _completion(self, _intermediateObjects, nil);
     if ([_delegate respondsToSelector:@selector(converterConvertXMLCompleted:objects:error:)]) {
         [_delegate converterConvertXMLCompleted:self objects:_intermediateObjects error:nil];
