@@ -7,14 +7,13 @@
 
 /* enums */
 
-enum XMLLayoutLengthMode {
+typedef NS_ENUM(NSInteger,  XMLLayoutLengthMode) {
     XMLLayoutLengthModePPI         = 0,
     XMLLayoutLengthModeMatchParent = 10,
     XMLLayoutLengthModeWrapContent = 11
 };
-typedef NSInteger XMLLayoutLengthMode;
 
-enum XMLLayoutGravity {
+typedef NS_ENUM(NSInteger, XMLLayoutGravity) {
     XMLLayoutGravityLeft             = 0,
     XMLLayoutGravityRight            = 1 << 0,
     XMLLayoutGravityCenterHorizontal = 1 << 1,
@@ -26,14 +25,12 @@ enum XMLLayoutGravity {
     XMLLayoutGravityHorizontalMask   = (XMLLayoutGravityRight|XMLLayoutGravityCenterHorizontal),
     XMLLayoutGravityVerticalMask     = (XMLLayoutGravityBottom|XMLLayoutGravityCenterVertical)
 };
-typedef NSInteger XMLLayoutGravity;
 
-enum XMLLayoutVisibility {
+typedef NS_ENUM(NSInteger, XMLLayoutVisibility) {
     XMLLayoutVisibilityVisible,
     XMLLayoutVisibilityInvisible,
     XMLLayoutVisibilityGone
 };
-typedef NSInteger XMLLayoutVisibility;
 
 /* structs */
 
