@@ -137,7 +137,7 @@
     // need to override
 }
 
-- (void)refreshWithAsynchronous:(BOOL)asynchronous
+- (void)refreshWithSynchronous:(BOOL)synchronous
 {
     // need to override
 }

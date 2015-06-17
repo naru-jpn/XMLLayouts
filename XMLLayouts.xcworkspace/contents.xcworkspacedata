@@ -88,10 +88,10 @@
             location = "group:Managers"
             name = "Managers">
             <FileRef
-               location = "group:XMLIDStores.h">
+               location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/R/Managers/XMLIDStore.h">
             </FileRef>
             <FileRef
-               location = "group:XMLIDStores.m">
+               location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/R/Managers/XMLIDStore.m">
             </FileRef>
             <FileRef
                location = "group:XMLTextManager.h">
@@ -114,13 +114,19 @@
          </Group>
       </Group>
       <Group
-         location = "group:Reader"
-         name = "Reader">
+         location = "group:Converter"
+         name = "Converter">
          <FileRef
-            location = "group:XMLLayoutReader.h">
+            location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/Converter/XMLLayoutConverter.h">
          </FileRef>
          <FileRef
-            location = "group:XMLLayoutReader.m">
+            location = "group:/Users/naru/GitHub/XMLLayouts/XMLLayouts/Converter/XMLLayoutConverter.m">
+         </FileRef>
+         <FileRef
+            location = "group:XMLIntermediateObjectCache.h">
+         </FileRef>
+         <FileRef
+            location = "group:XMLIntermediateObjectCache.m">
          </FileRef>
       </Group>
       <Group

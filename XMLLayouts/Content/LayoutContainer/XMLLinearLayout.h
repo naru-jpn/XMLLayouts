@@ -1,12 +1,11 @@
 
 #import "XMLLayoutContainer.h"
 
-enum XMLLayoutOrientation {
+typedef NS_ENUM(NSInteger, XMLLayoutOrientation) {
     XMLLayoutOrientationHorizontal = 0,
     XMLLayoutOrientationVertical   = 1,
     XMLLayoutOrientationDefault    = XMLLayoutOrientationHorizontal
 };
-typedef NSInteger XMLLayoutOrientation;
 
 @interface XMLLinearLayout : XMLLayoutContainer {
 @private

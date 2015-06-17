@@ -2,6 +2,8 @@
 #import <Foundation/Foundation.h>
 
 /* common */
+NSString * const kXMLLayouts = @"XMLLayouts";
+
 NSString * const kXMLLayoutID = @"id";
 
 NSString * const kXMLLayoutWidth = @"width";
@@ -78,6 +80,12 @@ NSString * const kXMLRelativityAlignParentRight = @"right";
 NSString * const kXMLRelativityAlignParentCenterHorizontal = @"center_horizontal";
 NSString * const kXMLRelativityAlignParentCenterVertical = @"center_vertical";
 NSString * const kXMLRelativityAlignParentCenter = @"center";
+
+/* converter */
+NSString * const kXMLLayoutConverterInclude = @"include";
+NSString * const kXMLLayoutConverterIncludedXML = @"layout";
+NSString * const kXMLLayoutConverterIncludedResourceName = @"resource";
+NSString * const kXMLLayoutConverterIncludedParent = @"parent";
 
 /* xml reader */
 NSString * const kXMLLayoutReaderInclude = @"include";

@@ -1,14 +1,13 @@
 
 #import <Foundation/Foundation.h>
 
-enum XMLRelativeAnchorType {
+typedef NS_ENUM(NSInteger, XMLRelativeAnchorType) {
     XMLRelativeAnchorNone,
     XMLRelativeAnchorTypePosition,
     XMLRelativeAnchorTypeAlign
 };
-typedef NSInteger XMLRelativeAnchorType;
 
-enum XMLRelativityAlignParent {
+typedef NS_ENUM(NSInteger,  XMLRelativityAlignParent) {
     XMLRelativityAlignParentLeft             = 1 << 0,
     XMLRelativityAlignParentRight            = 1 << 1,
     XMLRelativityAlignParentCenterHorizontal = 1 << 2,
@@ -20,7 +19,6 @@ enum XMLRelativityAlignParent {
     XMLRelativityAlignParentVerticalMask     = (XMLRelativityAlignParentBottom|XMLRelativityAlignParentCenterVertical),
     XMLRelativityAlignParentDefault          = 0
 };
-typedef NSInteger XMLRelativityAlignParent;
 
 
 @class XMLRelativeAnchors;

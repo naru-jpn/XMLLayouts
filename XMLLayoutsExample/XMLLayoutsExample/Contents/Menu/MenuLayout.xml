@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Layouts>
+<XMLLayouts>
     <LinearLayout width="match_parent" height="match_parent" orientation="vertical" gravity="center_vertical">
         <UIButton width="match_parent" height="52" title="@string/menu_1" title_color="444" font="HelveticaNeue:16" id="@+id/button1" />
         <UIButton width="match_parent" height="52" title="@string/menu_2" title_color="444" font="HelveticaNeue:16" id="@+id/button2" />
         <UIButton width="match_parent" height="52" title="@string/menu_3" title_color="444" font="HelveticaNeue:16" id="@+id/button3" />
     </LinearLayout>
-</Layouts>
+</XMLLayouts>

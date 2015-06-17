@@ -1,9 +1,8 @@
 
 #import <UIKit/UIKit.h>
 #import "XMLLayouts.h"
-#import "XMLLayoutReader.h"
 
-@interface UIView (XMLLayout) <XMLLayoutReaderDelegate>
+@interface UIView (XMLLayout)
 
 /** layout containers on this view */
 @property (nonatomic, readonly, strong) NSMutableArray *layoutContainers;
@@ -26,13 +25,13 @@
 - (XMLLayout *)layoutWithID:(NSInteger)id;
 - (BOOL)findLayoutByID:(NSInteger)id work:(void (^)(XMLLayout *lauout))work;
 
-/** Measure and arrange all layout synchronously. */
+/** Measure and arrange all layout asynchronously. */
 - (void)refreshAllLayout;
 
 /** Measure and arrange all layout.
- @param asynchronous asynchronous
+ @param synchronous synchronous
  */
-- (void)refreshAllLayoutWithAsynchronous:(BOOL)asynchronous;
+- (void)refreshAllLayoutWithSynchronous:(BOOL)synchronous;
 
 /** Measure view size needed to arraneg all containers.
  @return measured size needed to wrap all containers

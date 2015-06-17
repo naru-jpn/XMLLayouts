@@ -22,12 +22,12 @@
 
 - (void)refresh
 {
-    [self refreshWithAsynchronous:YES];
+    [self refreshWithSynchronous:NO];
 }
 
-- (void)refreshWithAsynchronous:(BOOL)asynchronous
+- (void)refreshWithSynchronous:(BOOL)synchronous
 {
-    if (asynchronous) {
+    if (!synchronous) {
         dispatch_async(_measureQueue, ^{
             [self estimate];
             [self measure];
