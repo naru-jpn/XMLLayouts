@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.platform = :ios, '6.0'
 
   s.source_files  = 'XMLLayouts/*.{h,m}', 'XMLLayouts/**/*.{h,m}', 'XMLLayouts/**/**/*.{h,m}'
-  s.public_header_files = 'XMLLayouts/XMLLayouts.{h,m}'
+  s.public_header_files = 'XMLLayouts/*.h', 'XMLLayouts/**/*.h', 'XMLLayouts/**/**/*.h'
 end
